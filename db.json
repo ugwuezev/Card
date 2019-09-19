@@ -1,0 +1,115 @@
+{
+  "Card": [
+    {
+      "id": 3,
+      "denomination": 500,
+      "pin": 2120020202,
+      "validity": "2020-08-21",
+      "creator": "Success"
+    },
+    {
+      "id": 4,
+      "denomination": 1000,
+      "pin": 1002021112,
+      "validity": "2024-01-03",
+      "creator": "John Paul"
+    },
+    {
+      "id": 5,
+      "denomination": 100,
+      "pin": 1002020133,
+      "validity": "2019-12-30",
+      "creator": "Vince"
+    },
+    {
+      "id": 6,
+      "denomination": 200,
+      "pin": 5002004050,
+      "validity": "2023-12-19",
+      "creator": "Daniel"
+    },
+    {
+      "denomination": "100",
+      "pin": "1234567890",
+      "validity": "2020-05-27",
+      "creator": "Vince",
+      "id": 7
+    },
+    {
+      "denomination": "1000",
+      "pin": "7120005230",
+      "validity": "2022-03-21",
+      "creator": "Jason",
+      "id": 8
+    },
+    {
+      "denomination": "200",
+      "pin": "1002120012",
+      "validity": "2021-11-26",
+      "creator": "Succy",
+      "id": 9
+    },
+    {
+      "denomination": "500",
+      "pin": "2341115000",
+      "validity": "2020-03-04",
+      "creator": "Michael",
+      "id": 10
+    },
+    {
+      "denomination": "1000",
+      "pin": "1110002121",
+      "validity": "2019-11-26",
+      "creator": "Blessing",
+      "id": 11
+    },
+    {
+      "denomination": "200",
+      "pin": "1123219900",
+      "validity": "2019-09-09",
+      "creator": "Frances",
+      "id": 12
+    },
+    {
+      "denomination": "500",
+      "pin": "2930093822",
+      "validity": "2020-01-01",
+      "creator": "Marvelous",
+      "id": 13
+    }
+  ],
+  "Denominations": [
+    {
+      "id": 1,
+      "name": "100",
+      "Quantity": 2
+    },
+    {
+      "id": 2,
+      "name": "200",
+      "Quantity": 2
+    },
+    {
+      "id": 3,
+      "name": "500",
+      "Quantity": 2
+    },
+    {
+      "id": 4,
+      "name": "1000",
+      "Quantity": 2
+    }
+  ],
+  "Users": [
+    {
+      "id": 1,
+      "cardId": 2,
+      "itemIds": [
+        1,
+        1,
+        1
+      ],
+      "total": 24000
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+body {
+  padding-top: 0px; 
+}
+
+.jumbotron {
+  /* color: #2c3e50; */
+  /* background: #ecf0f1; */
+  color: #17739C;
+  background: #F8CF00;
+  text-align: center;
+}
+
+.navbar-inverse {
+  background: #F8CF00;
+  color: black;
+  font-weight: bold;
+}
+
+.navbar-inverse .navbar-brand, .navbar-inverse a{
+  color: black;
+  font-weight: bold;
+}
+
+.navbar-inverse .navbar-nav>li>a {
+  color: black;
+  font-weight: bold;
+} 
+
+.form-control {
+  width:250px;
+  color: #17739C;
+}
+
+table {
+  background-color: #F8CF00;
+} 
+
+th {
+  text-align: center;
+  font-weight: thick;
+  color: white;
+}
+
+thead {
+  background-color:red;
+  text-align: center;
+}
+
+td {
+  text-align: center;
+  font-weight: thick;
+  color:black;
+}
