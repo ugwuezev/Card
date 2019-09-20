@@ -5,77 +5,84 @@
       "denomination": 500,
       "pin": 2120020202,
       "validity": "2020-08-21",
-      "creator": "Success"
+      "user": "Success"
     },
     {
       "id": 4,
       "denomination": 1000,
       "pin": 1002021112,
       "validity": "2024-01-03",
-      "creator": "John Paul"
+      "user": "John Paul"
     },
     {
       "id": 5,
       "denomination": 100,
       "pin": 1002020133,
       "validity": "2019-12-30",
-      "creator": "Vince"
+      "user": "Vince"
     },
     {
       "id": 6,
       "denomination": 200,
       "pin": 5002004050,
       "validity": "2023-12-19",
-      "creator": "Daniel"
+      "user": "Daniel"
     },
     {
       "denomination": "100",
       "pin": "1234567890",
       "validity": "2020-05-27",
-      "creator": "Vince",
+      "user": "Vince",
       "id": 7
     },
     {
       "denomination": "1000",
       "pin": "7120005230",
       "validity": "2022-03-21",
-      "creator": "Jason",
+      "user": "Jason",
       "id": 8
     },
     {
       "denomination": "200",
       "pin": "1002120012",
       "validity": "2021-11-26",
-      "creator": "Succy",
+      "user": "Succy",
       "id": 9
     },
     {
       "denomination": "500",
       "pin": "2341115000",
       "validity": "2020-03-04",
-      "creator": "Michael",
+      "user": "Michael",
       "id": 10
     },
     {
       "denomination": "1000",
       "pin": "1110002121",
       "validity": "2019-11-26",
-      "creator": "Blessing",
+      "user": "Blessing",
       "id": 11
     },
     {
       "denomination": "200",
       "pin": "1123219900",
       "validity": "2019-09-09",
-      "creator": "Frances",
+      "user": "Frances",
       "id": 12
     },
     {
       "denomination": "500",
       "pin": "2930093822",
       "validity": "2020-01-01",
-      "creator": "Marvelous",
+      "user": "Marvelous",
       "id": 13
+    },
+    {
+      "denomination": "100",
+      "pin": "2012312231",
+      "validity": "2019-11-05",
+      "user": "iyanu",
+      "id": 14
     }
   ],
   "Denominations": [
@@ -109,7 +116,7 @@
         1,
         1
       ],
-      "total": 24000
+      "total": 12
     }
   ]
 }

@@ -1,3 +1,12 @@
+function cardGenerator() {
+    let result = "";
+    for (let i = 0; i < 15; i++) {
+        let num = Math.ceil(Math.random() * 8)
+        result += num
+    }
+    return result
+}
+
 $(document).ready(function(){
     //alert("Hi guys")
     $.ajax({
@@ -20,7 +29,7 @@ $(document).ready(function(){
                         <td>
                             ${e[i].validity}
                         </td>
-                        <td>${e[i].creator}</td>
+                        <td>${e[i].user}</td>
                         <td>
                             <button id="del-${e[i].id}" class="delete-btn">Delete</button>
                             <button id="edt-${e[i].id}" class="edit-btn">Edit</button>
@@ -45,48 +54,50 @@ $(document).ready(function(){
             })
 
         })
-                
-                $('#form').submit((e)=>{
-                    e.preventDefault()
-                    let denomination = parseInt($('#denomination').val());
-                    let pin = Number($('#pin').val());
-                    let validity = String($('#validity').val());
-                    let creator = String($('#creator').val())
-                    ///alert(`${denomination}, ${pin}, ${validity}, ${creator}`)
-                    $.ajax({
-                        url: 'http://localhost:3000/Card',
-                        method: 'post',
-                        data: {
-                            denomination: Number(denomination), pin: Number(pin), validity: String(validity), creator: String(creator)
-            }
-        }).done((e)=>{
-            $('#tbody').append(
-                `<tr>
-                <td>
-                    ${e.denomination} 
-                    </td>
-                    <td>
-                    ${e.pin} 
-                    </td>
-                    <td>
-                        ${e.validity}
-                        </td>
-                        <td>
-                        ${e.creator}
-                        </td>
-                        <td>
-                        <button type="button" class="btn btn-danger delete-btn">Delete</button>
-                        </td>
+
+        
+
+        $('#form').submit((e)=>{
+            e.preventDefault()
+            let denomination = parseInt($('#denomination').val());
+            let pin = Number($('#pin').val()); 
+            let validity = String($('#validity').val());
+            let user = String($('#user').val())
+            ///alert(`${denomination}, ${pin}, ${validity}, ${user}`)
+            $.ajax({
+                url: 'http://localhost:3000/Card',
+                method: 'post',
+                data: {
+                    denomination: Number(denomination), pin: Number(pin), validity: String(validity), user: String(user)
+                }
+                }).done((e)=>{
+                    $('#tbody').append(
+                        `<tr>
+                            <td>
+                                ${e.denomination} 
+                            </td>
+                            <td>
+                                ${e.pin} 
+                            </td>
+                            <td>
+                                ${e.validity}
+                            </td>
+                            <td>
+                                ${e.user}
+                            </td>
+                            <td>
+                                <button type="button" class="btn btn-danger delete-btn">Delete</button>
+                            </td>
                         </tr>`
-                        )
-                        
-                        $('#denomination').val('');
-                        $('#pin').val('');
-                        $('#validity').val('');
-                        $('#creator').val('')
-                        
-                    })
-    })
+                    )
+                                
+                                $('#denomination').val('');
+                                $('#pin').val('');
+                                $('#validity').val('');
+                                $('#user').val('')
+                                
+                })
+        })
     
 });
 
@@ -103,14 +114,6 @@ $(document).ready(function(){
     */
 
 /* function to generate 16 random digits */
-/* function cardGenerator() {
-	let result = "";
-	for (let i = 0; i < 15; i++) {
-		let num = Math.ceil(Math.random() * 8)
-		result += num
-	}
-	return result
-}
 
-console.log(cardGenerator()) */
+
 
