@@ -110,13 +110,19 @@
   "Users": [
     {
       "id": 1,
-      "cardId": 2,
-      "itemIds": [
-        1,
-        1,
-        1
-      ],
-      "total": 12
+      "username": "sam",
+      "password": "codify"
+    },
+    {
+      "id": 2,
+      "username": "matt",
+      "password": "academy"
+    },
+    {
+      "id": 3,
+      "username": "chris",
+      "password": "forever"
     }
+
   ]
 }
